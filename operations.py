@@ -36,5 +36,5 @@ class Operations:
     def avg(self):
         return(sum(self.value1)/len(self.value1))
         
-    def factorial(self):
-        return(math.factorial(self.value1))
+    def log(self):
+        return(math.log10(self.value1))
