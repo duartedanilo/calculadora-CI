@@ -36,5 +36,9 @@ class TestMethods(unittest.TestCase):
         operation = Operations([1,2,3,4], False)
         self.assertAlmostEqual(operation.avg(), 2.5, msg='Incorrect result')
 
+    def test_log(self):
+        operation = Operations(10,1)
+        self.assertAlmostEqual(operation.log(), 1, msg='Incorrect result')
+
 if __name__ == '__main__':
     unittest.main()
